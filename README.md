@@ -6,6 +6,26 @@ The metrics this will be based on will be
 1) the speed at which it executes 
 2) the temperature of the hardware
 
+My collegues will be using os-bench for benchmarks, which means that I will need to write the following Functions:
+   * create_thread
+   * join_thread
+   * create_process
+   * wait_process
+   * fork
+   * execlp
+   * waidpid
+   * fopen
+   * fwrite
+   * fclose 
+   * remove
+   * malloc
+   * free
+</br>
+or implement the benchmarks using the local apis.
+For fun, I would also like to implement
+   * GEMM utilizing vc4
+    
+
 
 
 ### Hardware:
@@ -14,10 +34,15 @@ The metrics this will be based on will be
     SoC: BCM2835
     ISA: ARMv6
 
+### Firmware:
+Firmware from April 2018
 
 Resources:
-[Bare Metal Project by David Welch](https://github.com/dwelch67/raspberrypi-zero)
-[Circle - Small Kernel](https://github.com/rsta2/circle)
+[Bare Metal Project by David Welch](https://github.com/dwelch67/raspberrypi-zero) </br>
+[Circle - Small Kernel](https://github.com/rsta2/circle) </br>
+[crosstool-ng](https://crosstool-ng.github.io/docs/install/) </br>
+[os-bench](https://github.com/mbitsnbites/osbench) </br>
+[Benchmark games](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/c.html)</br>
 
 References:
 
